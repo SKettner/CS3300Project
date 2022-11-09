@@ -44,32 +44,27 @@
 </div>
 
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Button</button>       
+    <div id="projects">
+      <div class="row">
+        <% @projects.each do |project| %>
+          <div class="col-sm-4">
+            <%= render project %>
+            <p>
+            <div class="d-grid gap-2">
+              <a class="btn btn-primary" <%= link_to "Show this project", project %></a>
+            </div>
+            </p>
+          </div>
+        <% end %>
       </div>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Button</button>       
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Button</button>       
-      </div>
-    </div>
-  </div>
+
+    
+    <br>
+    <br>
+
+
+    <%= link_to "New project", new_project_path %>
 </div>
 
 <p> Put your HTML using Bootstrap CSS
