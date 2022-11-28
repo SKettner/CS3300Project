@@ -15,15 +15,14 @@
 
       <div style="padding-left: 2rem;">
         <h4 style="color: blue"> Sherman Kettner </h3>
-        
-
-        <!--- Explain what the block of code below this line is doing --->
 
         <% if user_signed_in? %>
           
           <div> Welcome <%= current_user.email %> </div>
+
           <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
-        
+
+          <a href="projects">Home</a>
         <% else %>
           <a href="/users/sign_in"> Sign in</a>
         <% end %>
