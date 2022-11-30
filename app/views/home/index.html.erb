@@ -23,6 +23,7 @@
           <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
 
           <a href="projects">Home</a>
+
         <% else %>
           <a href="/users/sign_in"> Sign in</a>
         <% end %>
