@@ -1,10 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
+
+
+
 <%= render @project %>
 
-<div>
-  <%= link_to "Edit this project", edit_project_path(@project) %> |
-  <%= link_to "Back to projects", projects_path %>
+<div class="btn btn-primary" style = "display: flex; justify-content:flex-end">
+  <button>Back</button>
+  <%= link_to "Back to projects", projects %>
 
-  <%= button_to "Destroy this project", @project, method: :delete %>
+  <% if user_signed_in? %>
+
+    <%= link_to "Edit this project", edit_project_path(@project) %> 
+
+    <%= button_to "Destroy this project", @project, method: :delete %>
+  <% end %>
 </div>

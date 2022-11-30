@@ -1,10 +1,13 @@
 <h1>Editing project</h1>
-
-<%= render "form", project: @project %>
-
-<br>
-
-<div>
+<div class="btn btn-primary" style = "display: flex; justify-content:flex-end">
   <%= link_to "Show this project", @project %> |
   <%= link_to "Back to projects", projects_path %>
 </div>
+
+<br>
+
+<%= render "form", project: @project %>
+
+
+
+
