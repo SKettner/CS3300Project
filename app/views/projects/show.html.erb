@@ -53,14 +53,17 @@
 
 <%= render @project %>
 
+<br>
+
+<div class="container mt-3">
 <div class="btn btn-primary" style = "display: flex; justify-content:flex-end">
-  <button>Back</button>
-  <%= link_to "Back to projects", projects %>
-
+  <a role="button" class="btn btn-primary" link_to, projects >Back to projects</a>
   <% if user_signed_in? %>
-
-    <%= link_to "Edit this project", edit_project_path(@project) %> 
-
-    <%= button_to "Destroy this project", @project, method: :delete %>
+    <a role="button" class="btn btn-primary" link_to, edit_project_path >Edit this project</a>
+    <br>
+    <a role="button" class="btn btn-primary" link_to, @project, method: :delete >Destroy this project</a>
   <% end %>
 </div>
+</div>
+
+</body>
