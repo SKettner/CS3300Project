@@ -1,5 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </ul>
+      </div>
+            <div class="cd-flex" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+
+
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Account 
+          </a>
+          <ul class="dropdown-menu">
+          <% if user_signed_in? %>
+          
+          <li><a class="dropdown-item" href="#">Sign out< destroy_user_session_path, method: :delete /a></li>
+
+        <% else %>
+        <li><a class="dropdown-item" href="/users/sign_in">Sign In</a></li>
+        <li><a class="dropdown-item" href="#">Register</a></li>
+        <% end %>
+          </ul>
+        </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-3">
+    <h1>My Portfolio</h1>
+    <h2>Sherman Kettner currently completing the <a href= "https://innovation.uccs.edu/coeas/computer-security">
+    Bachelor of Innovation in Computer Security</a></h2>
+  </div>
+
+  <div class="container mt-5">
+    <div id="projects">
+
+    <div class="row">
+  
+
+          <div class="col-sm-4">
+            <p>
+            <strong>Title:</strong> Test1
+           <br>
+            <strong>Description:</strong> Testing
+              <div class="d-grid gap-2">
+                <a class="btn btn-primary">Show this project</a>
+                <a class="btn btn-primary">Edit this project</a>
+                <a class="btn btn-primary">Delete this project</a>
+              </div>
+           </p>
+          </div>
+                    <div class="col-sm-4">
+            <p>
+            <strong>Title:</strong> Test2
+           <br>
+            <strong>Description:</strong> Testing
+              <div class="d-grid gap-2">
+                <a class="btn btn-primary">Show this project</a>
+                <a class="btn btn-primary">Edit this project</a>
+                <a class="btn btn-primary">Delete this project</a>
+              </div>
+           </p>
+          </div>
+        <div class="col-sm-4">
+            <p>
+            <strong>Title:</strong> Test3
+           <br>
+            <strong>Description:</strong> Testing
+              <div class="d-grid gap-2">
+                <a class="btn btn-primary">Show this project</a>
+                <a class="btn btn-primary">Edit this project</a>
+                <a class="btn btn-primary">Delete this project</a>
+              </div>
+           </p>
+          </div>
+                    <div class="col-sm-4">
+            <p>
+            <strong>Title:</strong> Test4
+           <br>
+            <strong>Description:</strong> Testing
+              <div class="d-grid gap-2">
+                <a class="btn btn-primary">Show this project</a>
+                <a class="btn btn-primary">Edit this project</a>
+                <a class="btn btn-primary">Delete this project</a>
+              </div>
+           </p>
+          </div>
+                    <div class="col-sm-4">
+            <p>
+            <strong>Title:</strong> Test5
+			<br>
+            <strong>Description:</strong> Testing
+              <div class="d-grid gap-2">
+                <a class="btn btn-primary">Show this project</a>
+                <a class="btn btn-primary">Edit this project</a>
+                <a class="btn btn-primary">Delete this project</a>
+              </div>
+           </p>
+          </div>
+                    
+
+    </div>
+    </div>
+  
+      
+    <br>
+    <br>
+
+  </div>
+
+</body>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

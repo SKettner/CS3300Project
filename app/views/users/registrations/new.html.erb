@@ -1,8 +1,18 @@
-<h2>Sign up</h2>
+<div class="container mt-5">
+<div class="card text-bg-info  mb-3" style="max-width: 80rem;">
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "users/shared/error_messages", resource: resource %>
+<div id="<%= dom_id project %>">
+      <div class="card-header">
+      <h1> 
+  <div class="input-group mb-3 input-group-lg">
+<h1>Sign up:</h1>
+  
+</div>
 
+  </h1>
+ </div>
+  <div class="card-body ">
+  <p>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -27,3 +37,8 @@
 <% end %>
 
 <%= render "users/shared/links" %>
+    </div>
+    
+</div>
+</div>
+
