@@ -23,10 +23,10 @@
   </div>
         <div class="cd-flex" id="navbarNavDropdown">
     <ul class="navbar-nav">
-
+    <% if user_signed_in? %>
         <li class="nav-item">
-
-
+        <a class="nav-link active" aria-current="page" href="http://localhost/proxy/3000/projects/new">Add New Project</a>
+        <% end %>
         <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Account 
